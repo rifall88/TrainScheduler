@@ -1,0 +1,128 @@
+  .All {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  .container {
+    background-color: #ffffff;
+    overflow: hidden;
+    width: 1440px;
+    height: 1024px;
+    position: relative;
+  }
+  .text1 {
+    position: absolute;
+    top: 70px;
+    left: 775px;
+    font-family: "Alegreya Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: #2c296b;
+    font-size: 32px;
+  }
+  .text2 {
+    position: absolute;
+    top: 70px;
+    left: 895px;
+    font-family: "Alegreya Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: #2c296b;
+    font-size: 32px;
+  }
+  .text3 {
+    position: absolute;
+    top: 70px;
+    left: 1015px;
+    font-family: "Alegreya Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: #2c296b;
+    font-size: 32px;
+  }
+  .text4 {
+    position: absolute;
+    top: 70px;
+    left: 1180px;
+    font-family: "Alegreya Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: #2c296b;
+    font-size: 32px;
+  }
+  .text5 {
+    position: absolute;
+    top: 70px;
+    left: 1310px;
+    font-family: "Alegreya Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: #2c296b;
+    font-size: 32px;
+  }
+  .oval_group {
+    position: absolute;
+    width: 1751px;
+    height: 697px;
+    top: 563px;
+    left: -169px;
+    background-color: #2c296b;
+    border-radius: 875.5px/348.5px;
+    box-shadow: inset -5px 17px 10.3px 4px #00000040;
+  }
+ .train {
+    position: absolute;
+    width: 937px;
+    height: 458px;
+    top: 81px;
+    left: 169px;
+    object-fit: cover;
+  }
+  .text6 {
+    position: absolute;
+    top: 316px;
+    left: 1190px;
+    font-family: "Livvic-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 32px;
+    text-align: right;
+  }
+  .logo {
+    position: absolute;
+    width: 258px;
+    height: 91px;
+    top: 37px;
+    left: 54px;
+    object-fit: cover;
+  }
+  .oval {
+    position: absolute;
+    width: 929px;
+    height: 245px;
+    top: 248px;
+    left: 256px;
+  }
+   .text7 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: "Livvic-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #2c296b;
+    font-size: 123px;
+  }
+  .text8 {
+    position: absolute;
+    top: 95px;
+    left: 25px;
+    font-family: "Nunito-Bold", Helvetica;
+    font-weight: 700;
+    color: #2c296b;
+    font-size: 36px;
+  }
+  .line {
+    position: absolute;
+    width: 912px;
+    height: 4px;
+    top: 475px;
+    left: 270px;
+  }
+  
