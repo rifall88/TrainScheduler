@@ -1,0 +1,104 @@
+*, html {
+    padding: o;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #f3f3f3;
+}
+.navbar {
+    background-color: #f3f3f3;
+    justify-content: space-between;
+    display: flex;
+    padding: 1rem 2rem;
+}
+.navbar ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 1.5rem;
+}
+.navbar ul li a {
+    font-family: "Alegreya Sans-Regular", Helvetica;
+    text-decoration: none;
+    color: #2c296b;
+    font-size: 20px;
+}
+.navbar div img {
+    width: 165px;
+}
+.schedule-btn {
+    background-color: #544ea6;
+    padding: 10px 15px; 
+    border-radius: 20px;
+}
+.navbar ul li a:hover {
+    color:#5a5799;
+}
+.table-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 85px;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.btn1 {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 10px;
+    margin-bottom: 15px;
+    position: absolute;
+    top: -40px;
+    left: 240px;
+}
+table {
+    width: 70%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+table th {
+    background-color: #007BFF;
+    font-family: "Alegreya Sans-Regular", Helvetica;
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid #ddd;
+}
+table td {
+    padding: 10px;
+    font-family: "Alegreya Sans-Regular", Helvetica;
+    font-size: 10px;
+    border: 1px solid #ddd;
+}
+footer {
+    background-color: #1a1818;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+footer p {
+    font-family: "Alegreya Sans-Regular", Helvetica;
+    font-size: 15px;
+}
+#snackbar {
+    visibility: hidden;
+    background-color: #52565b;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    padding: 15px;
+    position: fixed;
+    bottom: 100px;
+    font-size: 17px;
+    font-family: "Alegreya Sans-Regular", Helvetica;
+}
+#snackbar.show {
+    visibility: visible;
+}
