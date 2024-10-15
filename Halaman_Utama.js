@@ -1,44 +1,28 @@
-document.title = 'Landing Page'
-
-const content = document.querySelector('.content h1')
-content.style.color = 'red'
-
-const navbar = document.querySelector('.navbar')
-navbar.style.background = 'pink'
-
-const footer = document.querySelector('.footer')
-footer.style.background = 'pink'
-
 const home = document.querySelector('.Home');
-home.style.color = 'aqua';
-if (home) {
-    home.style.fontSize = '35px';
+function edit() {
+    alert('Login Dulu Broh')
 }
 
-function ganti() {
-    alert('Halaman Tidak Tersedia')
-    home.style.color = 'green';
+const route = document.querySelector('.route');
+function edit1() {
+    alert('Login Dulu Broh')
+}
+
+const schedule = document.querySelector('.schedule');
+function edit2() {
+    alert('Login Dulu Broh')
+}
+
+const station = document.querySelector('.station');
+function edit3() {
+    alert('Login Dulu Broh')
 }
 
 const login = document.querySelector('.login');
-function ubah() {
+function edit4() {
     login.textContent = 'Login Broh'
 }
 
 function back() {
     login.textContent = 'Sign In'
-}
-
-const station = document.querySelector('.station');
-function kecil() {
-    if (station) {
-        station.style.fontSize = '10px';
-    }
-}
-
-const route = document.querySelector('.route');
-function besar() {
-    if (route) {
-        route.style.fontSize = '50px';
-    }
 }
