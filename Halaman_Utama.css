@@ -19,7 +19,7 @@ body {
   gap: 1.5rem;
 }
 .navbar ul li a {
-  font-family: "Alegreya Sans-Regular", "Helvetica";
+  font-family: "Alegreya Sans-Regular", Helvetica;
   text-decoration: none;
   color: #2c296b;
   font-size: 20px;
@@ -64,14 +64,14 @@ body {
   position: absolute;
   bottom: 0;
   width: 100%;
-  border-radius: 50px 50px 0 0;
-  box-shadow: inset -5px 17px 10.3px 4px #00000040;
+  border-radius: 100% 100% 0 0;
+  box-shadow: inset -5px 15px 10.3px 4px #00000040;
 }
 .footer-left img {
   position: absolute;
-  width: 710px;
-  left: 55px;
-  top: 35px;
+  width: 720px;
+  left: 10px;
+  top: 50px;
 }
 .footer-right p {
   font-size: 30px;
