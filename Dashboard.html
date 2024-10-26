@@ -1,31 +1,42 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="Dashboard.css" />
-        <title>Dashboard Page</title>
-    </head>
-    <body>
-        <div class="dashboard">
-            <div class="container">
-                <div class="fall_group">
-                    <div class="box1"></div>
-                    <div class="text1">Home</div>
-                </div>
-                <div class="text2">Route</div>
-                <div class="text3"><a href="Schedule.html">Schedule</a></div>
-                <div class="text4">Station</div>
-                <img class="logo" src="logo.png" />
-                <img class="akun" src="icon_akun.png" />
-                <div class="notif"></div>
-                <div class="fall"><p class="p">© 2024 TrainSchedule by AhmdRfld. All rights reserved.</p></div>
-                <img class="box2" src="EkonomiClass.png" />
-                <img class="box3" src="Bussiness.jpg" />
-                <img class="box4" src="Eksklesif.jpg" />
-                <img class="box5" src="Train_Awal.png" />
-                <div class="text5">Ekonomi Class</div>
-                <div class="text6">Bussiness Class</div>
-                <div class="text7">Eksklusif Class</div>
-            </div>
+<html lang="en">
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/css/Dashboard.css">
+</head>
+<body>
+    <div class="navbar">
+        <div>
+            <img src="/assets/logo.png" alt="This Logo">
         </div>
-    </body>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Route</a></li>
+            <li><a href="Schedule.html">Schedule</a></li>
+            <li><a href="#">Station</a></li>
+            <li><a href="#"><img src="/assets/icon_notif.svg"></a></li>
+            <li><a href="#"><img src="/assets/icon_akun.svg"></a></li>
+        </ul>
+    </div>
+    <section class="banner">
+        <img src="/assets/Train_Awal.png" alt="Train Image" />
+    </section>
+    <section class="class-info">
+        <div class="class-card">
+            <h2><a href="#">Ekonomi Class</a></h2>
+            <a href="#"><img src="/assets/EkonomiClass.png" alt="Ekonomi Class"/></a>
+        </div>
+        <div class="class-card">
+            <h2><a href="#">Business Class</a></h2>
+            <a href="#"><img src="/assets/Bussiness.jpg" alt="Business Class" /></a>
+        </div>
+        <div class="class-card">
+            <h2><a href="#">Eksklusif Class</a></h2>
+            <a href="#"><img src="/assets/Eksklesif.jpg" alt="Eksklusif Class" /></a>
+        </div>
+    </section>
+    <footer>
+        <p>© 2024 TrainSchedule by AhmdRfld. All rights reserved.</p>
+    </footer>
+</body>
 </html>

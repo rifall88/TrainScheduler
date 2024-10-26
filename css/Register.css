@@ -1,0 +1,125 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "Livvic-SemiBold", Helvetica;
+    background-color: #f8f9fa;
+    height: 100%;
+    width: 100%;
+}
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+.left {
+    background-color: #3f308b;
+    color: #fff;
+    width: 40%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.left h1 {
+    margin-bottom: -10px;
+    font-size: 64px;
+    text-align: left; 
+    margin-left: -150px;
+    line-height: 1;
+}
+.left p {
+    margin-bottom: 90px;
+    margin-left: -295px;
+    font-size: 20px;
+    line-height: 1;
+    text-align: left;
+}
+.left img {
+    width: 130%; 
+    height: auto;
+    max-width: 750px;
+    display: block; 
+    margin-bottom: -5%;
+    margin-right: 9%;
+}
+.right {
+    width: 50%; 
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.logo img {
+    width: 25%;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 350px;
+    margin: 10px 200px;
+}
+input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.password-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.password-container input {
+    width: 100%;
+}
+.show-password {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+}
+.button {
+    padding: 14px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3f308b;
+    color: #fff;;
+    font-size: 16px;
+    text-align: center;
+}
+.google-login {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    color: #333;
+    padding: 12px;
+}
+.google-login img {
+    width: 20px;
+    margin-right: 0.5rem;
+}
+p {
+    text-align: center;
+}
+a {
+    color: #3f308b;
+    text-decoration: none;
+}
+.line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1.5rem 0;
+}
+.line img {
+    width: 100px;
+    margin: 0 0.5rem;
+}
+.line span {
+    color: #555;
+    font-size: 14px;
+}

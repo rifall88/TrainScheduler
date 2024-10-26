@@ -1,38 +1,42 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="login.css">
-    <title>Login Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/css/Login.css">
 </head>
 <body>
-    <section class="login_box">
-        <img src="logo.png" alt="Ini Logo" width="50%">
-        <form class="login_input">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="password">Password</label>
-            <div class="password_box">
-                <input type="password" id="password" name="password" required>
+    <div class="container">
+        <div class="left">
+            <h1>Welcome To <br> Train Scheduler</h1>
+            <p>I hope your journey goes smoothly <br> and there are no obstacles</p>
+            <img src="/assets/train.png" alt="Train Image">
+        </div>
+        <div class="right">
+            <div class="logo">
+                <img src="/assets/logo.png" alt="Train Scheduler Logo">
             </div>
-
-            <a href="#" class="forgot_password">Forgot password?</a>
-            <div class="button"><a href="Dashboard.html">Sign in</a></div>
-        </form>
-
-        <div class="line">
-            <img src="line.png" alt="line">
-            <span>or</span>
-            <img src="line.png" alt="line">
+            <form>
+                <input type="email" placeholder="Email" required>
+                <div class="password-container">
+                    <input type="password" placeholder="Password" required>
+                    <span class="show-password"></span>
+                </div>
+                <a href="#" class="forgot-password">Forgot password?</a>
+                <a class="button" href="Dashboard.html">Sign in</a>
+                <div class="line">
+                    <img src="/assets/line.png" alt="line">
+                    <span>or</span>
+                    <img src="/assets/line.png" alt="line">
+                </div>
+                <button class="google-login">
+                    <img src="/assets/Icons_Google.png" alt="Icon Google">
+                    Sign in with Google
+                </button>
+                <p>Are you new? <a href="/Register.html">Create an Account</a></p>
+            </form>
         </div>
-
-        <button class="google_icon">
-            <img src="Icons_Google.png" alt="Google Icon">
-            Sign in with Google
-        </button>
-
-        <div class="create_account">
-            <p>Are you new? <a href="Register.html">Create an Account</a></p>
-        </div>
-    </section>
+    </div>
 </body>
 </html>

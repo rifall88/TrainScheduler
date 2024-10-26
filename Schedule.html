@@ -1,57 +1,91 @@
 <!DOCTYPE html>
-<html>
 <head>
-    <link rel="stylesheet" href="Schedule.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Schedule Page</title>
+    <link rel="stylesheet" href="css/Schedule.css">
 </head>
 <body>
-    <header>
-        <div class="Schedule">
-            <div class="container">
-                <div class="text1">Home</div>
-                <div class="text2">Route</div>
-                <div class="fall_group">
-                    <div class="box1"></div>
-                    <div class="text3">Schedule</div>
-                </div>
-                <div class="text4">Station</div>
-                <img class="logo" src="logo.png" />
-                <img class="akun" src="icon_akun.png" />
-                <div class="notif"></div>
-            </div>
-    </header>
-    <div class="schedule_container">
-        <button class="button">Add Schedule</button>
-        <table>
+    <div class="navbar">
+        <div>
+            <img src="/assets/logo.png" alt="This Logo">
+        </div>
+        <ul>
+            <li><a href="Dashboard.html">Home</a></li>
+            <li><a href="#">Route</a></li>
+            <li><a href="#" class="active">Schedule</a></li>
+            <li><a href="#">Station</a></li>
+            <li><a href="#"><img src="/assets/icon_notif.svg"></a></li>
+            <li><a href="#"><img src="/assets/icon_akun.svg"></a></li>
+        </ul>
+    </div>
+    <div class="ticket-form">
+        <h2>Ticket Booking</h2>
+        <form id="ticketForm">
+            <label for="asal">Home Station</label>
+            <select id="asal" name="asal">
+                <option value="">Home Station</option>
+            </select>
+
+            <label for="tujuan">Destination Station</label>
+            <select id="tujuan" name="tujuan" disabled>
+                <option value="">Destination Station</option>
+            </select>
+
+            <label for="class">Select Class</label>
+            <select id="class" name="class">
+                <option value="">Select Class</option>
+                <option value="Economy">Economy Class</option>
+                <option value="Business">Business Class</option>
+                <option value="Executive">Executive Class</option>
+            </select>
+
+            <label for="tanggal">Departure Date</label>
+            <input type="date" id="tanggal" name="tanggal">
+
+            <label for="dewasa">Mature</label>
+            <select id="dewasa" name="dewasa">
+                <option value="1">1 Mature</option>
+                <option value="2">2 Mature</option>
+                <option value="3">3 Mature</option>
+            </select>
+
+            <label for="infant">Infant</label>
+            <select id="infant" name="infant">
+                <option value="0">0 Infant</option>
+                <option value="1">1 Infant</option>
+            </select>
+
+            <button type="button" onclick="pesanTiket()">Pesan & Cari Kereta</button>
+        </form>
+    </div>
+    <div>
+        <table class="tabel-data" border="1">
             <thead>
                 <tr>
-                     <th>Train Name</th>
-                     <th>Departure Time</th>
-                     <th>Arrival Time</th>
-                     <th>From</th>
-                     <th>To</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Argo Bromo Anggrek</td>
-                        <td>06:30 AM</td>
-                        <td>01:45 PM</td>
-                        <td>Jakarta</td>
-                        <td>Surabaya</td>
-                    </tr>
-                    <tr>
-                        <td>Taksaka</td>
-                        <td>07:00 AM</td>
-                        <td>02:00 PM</td>
-                        <td>Yogyakarta</td>
-                        <td>Jakarta</td>
-                    </tr>
-                </tbody>
-            </table>
+                    <th>Home Station</th>
+                    <th>Destination Station</th>
+                    <th>elective class</th>
+                    <th>Departure Date</th>
+                    <th>payment status</th>
+                </tr>
+            </thead>
+            <tbody id="tabelbody">
+                
+            </tbody>
+        </table>
+    </div>
+    <div id="modalAlert" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Booking Status</h2>
+            <p id="modalMessage"></p>
+            <button id="modalOkButton">OK</button>
         </div>
-        <div class="footer">
-            <div class="fall"><p class="p">© 2024 TrainSchedule by AhmdRfld. All rights reserved.</p></div>
-        </div>
+    </div>
+    <footer>
+        <p>© 2024 TrainSchedule by AhmdRfld. All rights reserved.</p>
+    </footer>
+    <script src="/Javascript/Schedule.js"></script>
 </body>
 </html>

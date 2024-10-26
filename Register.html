@@ -1,46 +1,45 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="Register.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
+    <link rel="stylesheet" href="/css/Register.css">
 </head>
 <body>
-    <section class="login_box">
-        <img src="logo.png" alt="Ini Logo" class="logo">
-
-        <form class="login_input">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Enter your name" required>
-
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="Enter your email" required>
-
-            <label for="password">Password</label>
-            <div class="password_box">
-                <input type="password" id="password" name="password" placeholder="Enter your password" required>
-            </div>
-
-            <label for="confirm-password">Confirm Password</label>
-            <div class="password_box">
-                <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
-            </div>
-
-            <button type="submit" class="button">Sign up</button>
-        </form>
-
-        <div class="line">
-            <img src="line.png" alt="line">
-            <span>or</span>
-            <img src="line.png" alt="line">
+    <div class="container">
+        <div class="left">
+            <h1>Welcome To <br> Train Scheduler</h1>
+            <p>I hope your journey goes smoothly <br> and there are no obstacles</p>
+            <img src="/assets/train.png" alt="Train Image">
         </div>
-
-        <button class="google_icon">
-            <img src="Icons_Google.png" alt="Google Icon">
-            Sign up with Google
-        </button>
-
-        <div class="create_account">
-            <p>Already have an account? <a href="login.html">Sign in</a></p>
+        <div class="right">
+            <div class="logo">
+                <img src="/assets/logo.png" alt="Train Scheduler Logo">
+            </div>
+            <form>
+                <input type="email" placeholder="Email" required>
+                <div class="password-container">
+                    <input type="password" placeholder="Password" required>
+                    <span class="show-password"></span>
+                </div>
+                <div class="password-container">
+                    <input type="password" placeholder="Confirm Password" required>
+                    <span class="show-password"></span>
+                </div>
+                <a class="button" href="Login.html">Sign Up</a>
+                <div class="line">
+                    <img src="/assets/line.png" alt="line">
+                    <span>or</span>
+                    <img src="/assets/line.png" alt="line">
+                </div>
+                <button class="google-login">
+                    <img src="/assets/Icons_Google.png" alt="Icon Google">
+                    Sign up with Google
+                </button>
+                <p>Are you new? <a href="#">I Already Have An Account</a></p>
+            </form>
         </div>
-    </section>
+    </div>
 </body>
 </html>
