@@ -1,22 +1,23 @@
 <!DOCTYPE html>
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Schedule Page</title>
-    <link rel="stylesheet" href="css/Schedule.css">
+    <link rel="stylesheet" href="http://localhost/2318074_Projek/css/Schedule.css">
 </head>
 <body>
     <div class="navbar">
         <div>
-            <img src="/assets/logo.png" alt="This Logo">
+            <img src="http://localhost/2318074_Projek/assets/logo.png" alt="This Logo">
         </div>
         <ul>
-            <li><a href="Dashboard.html">Home</a></li>
+            <li><a href="Dashboard.php">Home</a></li>
             <li><a href="#">Route</a></li>
             <li><a href="#" class="active">Schedule</a></li>
-            <li><a href="#">Station</a></li>
-            <li><a href="#"><img src="/assets/icon_notif.svg"></a></li>
-            <li><a href="#"><img src="/assets/icon_akun.svg"></a></li>
+            <li><a href="Station.php">Station</a></li>
+            <li><a href="#"><img src="http://localhost/2318074_Projek/assets/icon_notif.svg"></a></li>
+            <li><a href="#"><img src="http://localhost/2318074_Projek/assets/icon_akun.svg"></a></li>
         </ul>
     </div>
     <div class="ticket-form">
@@ -65,9 +66,9 @@
                 <tr>
                     <th>Home Station</th>
                     <th>Destination Station</th>
-                    <th>elective class</th>
+                    <th>Elective Class</th>
                     <th>Departure Date</th>
-                    <th>payment status</th>
+                    <th>Payment Status</th>
                 </tr>
             </thead>
             <tbody id="tabelbody">
@@ -86,6 +87,6 @@
     <footer>
         <p>© 2024 TrainSchedule by AhmdRfld. All rights reserved.</p>
     </footer>
-    <script src="/Javascript/Schedule.js"></script>
+    <script src="http://localhost/2318074_Projek/Javascript/Schedule.js"></script>
 </body>
 </html>

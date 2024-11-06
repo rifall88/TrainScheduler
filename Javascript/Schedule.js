@@ -57,11 +57,11 @@ function pesanTiket() {
             <td>Payment Completed</td>
         `;
         tabelBody.appendChild(newRow);
-        showModal('Pesanan Berhasil, Silakan Lakukan Pembayaran');
+        showModal('Order Successful, Please Make Payment');
         document.getElementById('ticketForm').reset();
         tujuanSelect.disabled = true;
     } else {
-        showModal('Mohon lengkapi semua data!');
+        showModal('Please Complete All Data!');
     }
 }
 function showModal(message) {
