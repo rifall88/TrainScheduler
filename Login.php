@@ -17,14 +17,14 @@
             <div class="logo">
                 <img src="http://localhost/2318074_Projek/assets/logo.png" alt="Train Scheduler Logo">
             </div>
-            <form>
-                <input type="email" placeholder="Email" required>
+            <form action="login-proses.php" method="post">
+                <input type="email" name="Email" placeholder="Email" required>
                 <div class="password-container">
-                    <input type="password" placeholder="Password" required>
+                    <input type="password" name="Password" placeholder="Password" required>
                     <span class="show-password"></span>
                 </div>
                 <a href="#" class="forgot-password">Forgot password?</a>
-                <a class="button" href="Dashboard.php">Sign in</a>
+                <button type="submit" class="button">Sign In</button>
                 <div class="line">
                     <img src="http://localhost/2318074_Projek/assets/line.png" alt="line">
                     <span>or</span>

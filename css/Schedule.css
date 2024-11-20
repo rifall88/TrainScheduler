@@ -66,27 +66,45 @@ body {
     flex-direction: column;
     gap: 15px;
 }
-.ticket-form select, 
+.ticket-form input[type="text"], 
+.ticket-form input[type="number"], 
 .ticket-form input[type="date"], 
-.ticket-form button {
-    padding: 10px;
-    border: none;
+.ticket-form select {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 16px;
-    font-family: "Alegreya Sans-Regular", Helvetica;
+    background-color: #f9f9f9;
+    color: #333;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    font-family:  "Alegreya Sans-Regular", Helvetica;
+}
+.ticket-form input[type="text"]:focus, 
+.ticket-form input[type="number"]:focus, 
+.ticket-form input[type="date"]:focus, 
+.ticket-form select:focus {
+    outline: none;
+    border-color: #2d6aa6;
+    background-color: #fff;
 }
 .ticket-form button {
     background-color: #091057;
     color: white;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 .ticket-form button:hover {
     background-color: #090f57a2;
 }
 .tabel-data {
-    width: 60%;
+    width: 75%;
     border-collapse: collapse;
-    margin-left: 490px;
+    margin-left: 375px;
     margin-top: -650px;
     table-layout: fixed;
 }

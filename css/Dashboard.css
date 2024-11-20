@@ -80,3 +80,46 @@ footer p {
     text-decoration: none;
     color:#282525;
 }
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.profile-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+}
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    z-index: 10;
+    width: 200px;
+}
+.menu-item {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    transition: background 0.2s;
+}
+.menu-item:hover {
+    background-color: #f5f5f5;
+}
+.menu-divider {
+    height: 1px;
+    background-color: #eee;
+    margin: 5px 0;
+}
+.icon {
+    margin-right: 12px;
+}

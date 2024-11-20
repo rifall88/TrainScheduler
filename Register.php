@@ -17,27 +17,28 @@
             <div class="logo">
                 <img src="http://localhost/2318074_Projek/assets/logo.png" alt="Train Scheduler Logo">
             </div>
-            <form>
-                <input type="email" placeholder="Email" required>
+            <form action="register-proses.php" method="post">
+                <input type="email" name="Email" placeholder="Email" required>
                 <div class="password-container">
-                    <input type="password" placeholder="Password" required>
+                    <input type="password" name="Password" placeholder="Password" required>
                     <span class="show-password"></span>
                 </div>
                 <div class="password-container">
-                    <input type="password" placeholder="Confirm Password" required>
+                    <input type="password" name="Confirm_Password" placeholder="Confirm Password" required>
                     <span class="show-password"></span>
                 </div>
-                <a class="button" href="Login.php">Sign Up</a>
+                <button type="submit" name="register" class="button">Sign Up</button>
                 <div class="line">
                     <img src="http://localhost/2318074_Projek/assets/line.png" alt="line">
                     <span>or</span>
                     <img src="http://localhost/2318074_Projek/assets/line.png" alt="line">
                 </div>
+                <!-- Button for Google Login (optional) -->
                 <button class="google-login">
                     <img src="http://localhost/2318074_Projek/assets/Icons_Google.png" alt="Icon Google">
                     Sign up with Google
                 </button>
-                <p>Are you new? <a href="Login.php">I Already Have An Account</a></p>
+                <p>Already have an account? <a href="Login.php">Login here</a></p>
             </form>
         </div>
     </div>

@@ -2,6 +2,8 @@
 session_start();
 $cookieDuration = 86400;
 
+require 'koneksi.php';
+
 if (isset($_COOKIE['search_history'])) {
     $searchHistory = json_decode($_COOKIE['search_history'], true);
 } else {
@@ -9,20 +11,29 @@ if (isset($_COOKIE['search_history'])) {
 }
 
 $searchResults = [];
-$stations = [
-    ["name" => "Malang Station", "location" => "Jl. Trunojoyo No.10, Kiduldalem, Kec. Klojen, Kota Malang, Jawa Timur 65111", "facilities" => "Parkir, Toilet, Restoran"],
-    ["name" => "Probolinggo Station", "location" => "Mayangan, Kec. Mayangan, Kota Probolinggo, Jawa Timur", "facilities" => "Toilet, Kios"],
-    ["name" => "Surabaya Station", "location" => "Jl. Stasiun Gubeng, Pacar Keling, Kec. Tambaksari, Surabaya, Jawa Timur 60272", "facilities" => "Parkir, Toilet, Restoran, Kios"],
-    ["name" => "Yogyakarta Station", "location" => "Jl. Ps. Kembang No.26, Sosromenduran, Gedong Tengen, Kota Yogyakarta, Daerah Istimewa Yogyakarta 55271", "facilities" => "Parkir, Toilet, Restoran, Kios"],
-];
+
+$stations = [];
+$sql = "SELECT * FROM tabel_stasiun";
+$result = mysqli_query($koneksi, $sql);
+
+if ($result && mysqli_num_rows($result) > 0) {
+    while ($row = mysqli_fetch_assoc($result)) {
+        $stations[] = [
+            "name" => $row['Nama'],
+            "location" => $row['Lokasi'], 
+            "facilities" => $row['Fasilitas']
+        ];
+    }
+}
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['search'])) {
-    $searchQuery = $_POST['search'];
+    $searchQuery = mysqli_real_escape_string($koneksi, $_POST['search']);
     if (!in_array($searchQuery, $searchHistory)) {
         $searchHistory[] = $searchQuery;
         $_SESSION['search_history'] = $searchHistory;
         setcookie('search_history', json_encode($searchHistory), time() + $cookieDuration, "/");
     }
+
     foreach ($stations as $station) {
         if (stripos($station['name'], $searchQuery) !== false) {
             $searchResults[] = $station;
