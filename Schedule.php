@@ -148,6 +148,7 @@ $status = isset($_GET['status']) && $_GET['status'] == 'success';
         </table>
     </div>
     <script src="http://localhost/2318074_Projek/Javascript/Schedule.js"></script>
+    <script src="http://localhost/2318074_Projek/Javascript/Dropdown.js"></script>
     <footer>
         <p>© 2024 TrainSchedule by AhmdRfld. All rights reserved.</p>
     </footer>
