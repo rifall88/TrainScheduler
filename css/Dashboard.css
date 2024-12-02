@@ -1,23 +1,25 @@
 *, html {
+    padding: o;
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
-    font-family: "Livvic-SemiBold", Helvetica;
 }
 body {
     background-color: #f3f3f3;
-}
-.active {
-    background-color: #6f61b2;
-    color: #fff;
-    padding: 8px 12px;
-    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
 }
 .navbar {
     background-color: #f3f3f3;
     justify-content: space-between;
     display: flex;
     padding: 1rem 2rem;
+    position: fixed;
+    top: 0;
+    width: 100%; 
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 .navbar ul {
     display: flex;
@@ -31,11 +33,17 @@ body {
     color: #2c296b;
     font-size: 20px;
 }
-.navbar ul li a:hover {
-    color:#5a5799;
-  }
 .navbar div img {
     width: 165px;
+}
+.active {
+    background-color: #6f61b2;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 7px;
+}
+.navbar ul li a:hover {
+    color:#5a5799;
 }
 .banner img {
     width: 100%;
@@ -68,7 +76,6 @@ footer {
     color: #fff;
     text-align: center;
     padding: 1.5rem;
-    position: fixed;
     bottom: 0;
     width: 100%;
 }
@@ -122,4 +129,34 @@ footer p {
 }
 .icon {
     margin-right: 12px;
+}
+.widget {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.widget h3 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+.widget table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: "Alegreya Sans-Regular", Helvetica;
+}
+.widget table th,
+.widget table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+.widget table th {
+    background-color: #2d6aa6;
+    color: white;
+}
+.widget table td {
+    background-color: #fff;
 }

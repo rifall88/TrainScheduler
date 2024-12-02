@@ -25,6 +25,12 @@ if (isset($_GET['id'])) {
                 Tanggal_Berangkat='$tanggal' 
                 WHERE Id_Tiket=$id";
 
+        if (mysqli_query($koneksi, $sql)){
+            $sql = "UPDATE tabel_rute SET 
+                Stasiun_Asal='$asal', 
+                Stasiun_Tujuan='$tujuan' where Id_Rute = $id";
+        }
+
         if (mysqli_query($koneksi, $sql)) {
             header("Location: Schedule.php");
             exit();

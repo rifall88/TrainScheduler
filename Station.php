@@ -57,18 +57,36 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['search'])) {
         </div>
         <ul>
             <li><a href="Dashboard.php">Home</a></li>
-            <li><a href="#">Route</a></li>
+            <li><a href="Route.php">Route</a></li>
             <li><a href="Schedule.php">Schedule</a></li>
             <li><a href="#" class="active">Station</a></li>
             <li><a href="#"><img src="http://localhost/2318074_Projek/assets/icon_notif.svg"></a></li>
-            <li><a href="#"><img src="http://localhost/2318074_Projek/assets/icon_akun.svg"></a></li>
+            <li class="dropdown">
+                <button class="dropdown-toggle">
+                    <img src="http://localhost/2318074_Projek/assets/icon_akun.svg" alt="Profile Picture" class="profile-img">
+                </button>
+                <div class="dropdown-menu">
+                    <a href="#" class="menu-item">
+                        <span class="icon">👤</span> My Profile
+                    </a>
+                    <a href="#" class="menu-item">
+                        <span class="icon">🛒</span> Histori Pesanan
+                    </a>
+                    <a href="#" class="menu-item">
+                        <span class="icon">⚙️</span> Setting
+                    </a>
+                    <a href="Logout.php" class="menu-item logout">
+                        <span class="icon">🔴</span> Log Out
+                    </a>
+                </div>
+            </li>
         </ul>
     </div>
     <div class="content">
         <h1>Find a Station</h1>
         <form method="POST" action="">
             <input id="search-input" class="search" type="text" name="search" placeholder="Search Station..." list="search-history">
-            <button type="submit">Cari</button>
+            <button class="tmbl1" type="submit">Cari</button>
   
             <datalist id="search-history">
                 <?php foreach ($searchHistory as $history): ?>
@@ -107,5 +125,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['search'])) {
     <script>
         document.getElementById('search-input').value = '';
     </script>
+    <script src="http://localhost/2318074_Projek/Javascript/Dropdown.js"></script>
 </body>
 </html>
